@@ -5,22 +5,20 @@
         <div class="modal-container">
           <div class="modal-header">
             <slot name="header">
-              <h4>Be Careful</h4>
+              <h4>Before you continue...</h4>
             </slot>
           </div>
           <div class="modal-body">
             <slot name="body">
               <p class="helper py-2">
-                Do not leak your key-pair especially your private key to anyone. <br />
-                Neither the web nor chain stored your private key. <br />
-                Your can't retrieve your private key if you lost except you have key-store file. <br />
-                Save your key-pair in security place.
-              </p>
+				  Please take a moment to read through this short introduction and security warning. It’s very important for your own security that you understand that the generated key-pair provides exclusive access to your wallet. Anyone that has access to your private key has access to your funds. Ignoring this step will highly increase the chances of your funds being lost or stolen, in which case we won’t be able to help you. <br />
+				  Contentos does not store your private key after registration, it is your responsibility to backup and safely store this private key in a secure place, preferably encrypted. </p>
             </slot>
           </div>
           <div class="modal-footer">
             <slot name="footer">
-              <button class="btn btn-block" @click="$emit('close')">I Know The Risk</button>
+				 <button class="btn btn-block" @click="$emit('cancel')">Take me back.</button>
+              <button class="btn btn-block" @click="$emit('close')">Continue, I understand the risks.</button>
             </slot>
           </div>
         </div>
