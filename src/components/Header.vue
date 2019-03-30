@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-12 test-warning">
       <img src="/static/img/cos_warn.png" class="warningIcon" alt="">
-      <div class="careful">Be careful,This is the test network for Contentos. Any trading information is for testing purposes. </div>
+      <div class="careful">Be careful, this is the testnet for Contentos. Any trading information is fictive and for testing purposes.</div>
       </div>
     </div>
   </div>
@@ -12,7 +12,7 @@
     <header class="py-3 header">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1">
-          <a class="logo-text" href="#">Contentos</a>
+          <img src="https://explorer.contentos.io/static/img/logo_cos.png" alt="">
         </div>
       </div>
     </header>
@@ -23,11 +23,11 @@
   <div class="container">
     <div class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <router-link class="p-2 nav-item-text" to="create">Create New Account</router-link>
+        <router-link class="p-2 nav-item-text" to="create">Create COS wallet</router-link>
         <!-- <router-link class="p-2 nav-item-text" to="import">Generate Keystore File</router-link> -->
-        <router-link class="p-2 nav-item-text" to="faucet" v-if="enableFaucet">Faucet</router-link>
-        <router-link class="p-2 nav-item-text" to="transfer">Transfer</router-link>
-        <router-link class="p-2 nav-item-text" to="post">Post A Topic</router-link>
+        <router-link class="p-2 nav-item-text" to="faucet" v-if="enableFaucet">Get some testnet COS</router-link>
+        <router-link class="p-2 nav-item-text" to="transfer">Send COS</router-link>
+        <router-link class="p-2 nav-item-text" to="post">Post content on the COS blockchain</router-link>
       </nav>
   </div>
   </div>
